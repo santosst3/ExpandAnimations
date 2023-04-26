@@ -178,7 +178,7 @@ function fixateSlideNumber(doc as Object, slide as Object, slideNr as Integer, s
             'Call Tools.WritedbgInfo(shape)
             slide.IsPageNumberVisible = False
             slide.add(copy)
-            copy.setString(CStr(slideNr) & " / " & CStr(slideCount))
+            copy.setString(CStr(slideNr))
             copy.Style = shape.Style
             copy.Text.Style = shape.Text.Style
             copy.Text.CharHeight = shape.Text.CharHeight
